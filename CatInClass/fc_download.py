@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# fastclass - fc_download.py
+# CatInClass - fc_download.py
 #
 # Christian Werner, 2018-10-23
 #
@@ -28,7 +28,7 @@ from .googleparserfix import GoogleParser
 from .imageprocessing import resize
 from .misc import sanitize_searchstring
 
-EPILOG = """::: FastClass fcd :::\r
+EPILOG = """::: CatInClass fcd :::\r
 \r
 ...an easy way to crawl the net for images when building a\r
 dataset for deep learning.\r

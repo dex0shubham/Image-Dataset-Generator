@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# fastclass - misc.py
+# CatInClass - misc.py
 #
 # Christian Werner, 2018-10-27
 

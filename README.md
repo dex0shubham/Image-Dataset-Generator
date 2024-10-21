@@ -1,19 +1,13 @@
-# FastClass
-
-![Version](https://img.shields.io/github/v/release/cwerner/fastclass.svg)
-![Python](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8-blue)
-![Style](https://img.shields.io/badge/code%20style-black-000000.svg)
-![GitHub stars](https://img.shields.io/github/stars/cwerner/fastclass?style=social)
+# CatInClass
 
 
 A little set of tools to batch download images and weed through, delete and
 classify them into groups for building deep learning image datasets.
 
-I wrote up a small [blog post](https://www.christianwerner.net/tech/Build-your-image-dataset-faster/) on my site [www.christianwerner.net](https://www.christianwerner.net).
 
 ## Installation
 
-`pip install git+https://github.com/cwerner/fastclass.git#egg=fastclass`
+`pip install git+https://github.com/cwerner/CatInClass.git#egg=CatInClass`
 
 The installer will also place the executables **fcc** and **fcd** in your \$PATH.
 
@@ -47,7 +41,7 @@ Options:
   -o, --outpath TEXT              name of output directory  [default: dataset]
   -h, --help                      Show this message and exit.
 
-  ::: FastClass fcd :::
+  ::: CatInClass fcd :::
 
   ...an easy way to crawl the net for images when building a dataset for
   deep learning.
@@ -68,7 +62,7 @@ Column 1 contains the search terms. You can specify multiple searchterms using s
 Once downloaded use **fcc** to quickly inspect the loaded files and rate or
 classify them. You can also mark them for deletion.
 
-![FastClass cleaner: fcc](assets/fcc_screenshot.png)
+![CatInClass cleaner: fcc](assets/fcc_screenshot.png)
 
 ### Usage
 
@@ -78,13 +72,13 @@ will show you the help page.
 ```
 Usage: fcc [OPTIONS] INFOLDER [OUTFOLDER]
 
-  FastClass fcc
+  CatInClass fcc
 
 Options:
   --nocopy TEXT  disable filecopy for cleaned image set  [default: False]
   -h, --help     Show this message and exit.
 
-  ::: FastClass fcc ::: ...a fast way to cleanup/ sort your images when
+  ::: CatInClass fcc ::: ...a fast way to cleanup/ sort your images when
   building a dataset for deep learning.
 
   Note: In the application use the following keys: <1>, <2>, ... <9> for
@@ -102,6 +96,6 @@ Options:
 
 ## Flickr Crawler
 
-The Flickr crawler requires an API key. FastClass looks for the key in an environment variable called `FLICKR_API_KEY`. Request one from the [Flickr API key application page.](https://www.flickr.com/services/apps/create/apply/)
+The Flickr crawler requires an API key. CatInClass looks for the key in an environment variable called `FLICKR_API_KEY`. Request one from the [Flickr API key application page.](https://www.flickr.com/services/apps/create/apply/)
 
 `FLICKR_API_KEY=asdf1234asdf456 fcd -c FLICKR my_project.csv`

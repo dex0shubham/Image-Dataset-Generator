@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# fastclass - imageprocessing.py
+# CatInClass - imageprocessing.py
 #
 # Christian Werner, 2018-10-27
 

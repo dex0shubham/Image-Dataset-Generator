@@ -25,7 +25,7 @@ requirements = to_list(
 )
 
 setup(
-    name="fastclass",
+    name="CatInClass",
     version="0.2.0",
     packages=find_packages(),
     install_requires=requirements,
@@ -35,7 +35,7 @@ setup(
     long_description_content_type="text/markdown",
     keywords="deep learning, crawler, preprocessing",
     license="Apache Software License 2.0",
-    url="https://github.com/cwerner/fastclass",
+    url="https://github.com/cwerner/CatInClass",
     author="Christian Werner",
     author_email="cwerner.gh@gmail.com",
     classifiers=[
@@ -48,8 +48,8 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "fcc=fastclass.fc_clean:cli",
-            "fcd=fastclass.fc_download:cli",
+            "fcc=CatInClass.fc_clean:cli",
+            "fcd=CatInClass.fc_download:cli",
         ]
     },
     zip_safe=False,

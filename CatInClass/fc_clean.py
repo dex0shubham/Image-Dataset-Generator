@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# fastclass - fc_clean.py
+# CatInClass - fc_clean.py
 #
 # Christian Werner, 2018-10-23
 
@@ -17,7 +17,7 @@ import shutil
 
 from .imageprocessing import image_pad
 
-EPILOG = """::: FastClass fcc :::\r
+EPILOG = """::: CatInClass fcc :::\r
 ...a fast way to cleanup/ sort your images when building a\r
 dataset for deep learning.\r
 \r
@@ -155,7 +155,7 @@ class AppTk(tk.Frame):
 
         stats = f"{self.no_classified}/{self.no_total}"
         label = (
-            f"FastClass :: {self.cur_file.image_path.name} - {get_class()} ({stats})"
+            f"CatInClass :: {self.cur_file.image_path.name} - {get_class()} ({stats})"
         )
         return label
 
@@ -243,7 +243,7 @@ class AppTk(tk.Frame):
 
 def main(INFOLDER, OUTFOLDER, nocopy):
     root = tk.Tk()
-    root.title("FastClass")
+    root.title("CatInClass")
 
     app = AppTk(root, infolder=INFOLDER, outfolder=OUTFOLDER, nocopy=nocopy)
 
@@ -283,7 +283,7 @@ click.Context.get_usage = click.Context.get_help
 @click.argument("infolder", type=click.Path(exists=True), required=True)
 @click.argument("outfolder", type=click.Path(exists=False), required=False)
 def cli(infolder, outfolder, nocopy):
-    """FastClass fcc"""
+    """CatInClass fcc"""
 
     main(infolder, outfolder, nocopy)
 

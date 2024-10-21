@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #
-# fastclass - deduplicate.py
+# CatInClass - deduplicate.py
 #
 # Christian Werner, 2018-10-27
 
